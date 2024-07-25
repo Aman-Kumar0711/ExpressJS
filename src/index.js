@@ -7,6 +7,7 @@ const app = express();
 //console.log(path.join(__dirname, "../public"));  .. se to main index.js jis directory mei hai uss se ek step baahar ja rha hoon
 //yeh mera complete path ban chuka hai
 const staticPath = path.join(__dirname, "../public"); //public folder mei hi to meri index.html and style.css hai
+//ab mera servet ban chuka hai and static website uspe serve bhi main iss line ki madad se kar paa rha hoon...ab agar mujhe kuchh changes karne hain site mei to mujhe public folder mei jaake individual cheezeon per change karna hoga bas baaki woh server per apne aap update hota rahega...
 app.use(express.static(staticPath));
 app.listen(8000, () => {
   console.log("Listening on port 8000");

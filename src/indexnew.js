@@ -5,7 +5,7 @@ const port = 8000;
 //to set view engine
 app.set("view engine", "hbs");
 //agar ejs ya pug use karta yo hbs ki jagah unko likhta
-app.set("views", path.join(__dirname, "../views")); //main is prakaar views ki jagah kuchh aurbhinaam rakhwa sakta hoon uss directory ka jidhar meri .hbs file stored hai...otherwise default to views hota hi hai
+app.set("views", path.join(__dirname, "../templates/views")); //main is prakaar views ki jagah kuchh aur bhi naam rakhwa sakta hoon uss directory ka jidhar meri .hbs file stored hai...otherwise default to views hota hi hai
 app.get("", (req, res) => {
   res.render("index"); //hbs maine upar hi mention kar diya hai
   //render se yeh hoga ki jo bhi file maine di hai woh render hogi, dynamically
